@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react"
+import React, { useLayoutEffect } from "react"
 import { motion } from 'framer-motion';
 import { ICarouselContent, ISlideTwoProps } from "../SlideShow.interfaces";
 

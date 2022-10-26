@@ -38,17 +38,12 @@ const run = function run() {
 	}
 
 	if (_.get(args, 'build')) {
-		// build += ' webpack --config webpack.config.js'
 		const command = _.get(args, 'devServer') ? 'webpack serve' : 'webpack'
 		build += ` ${command} --config webpack.config.js && rm -rf release/index.ejs`
 	}
 
 	helper.log(`Running... ${build.trim()}`, 'green')
 	helper.run(build.trim())
-	// if (_.get(args, 'transpile')) {
-	// 	helper.log(`Running... node scripts/transpile.js`, 'green')
-	// 	helper.run(`node transpile.js`)
-	// }
 }
 
 run();
