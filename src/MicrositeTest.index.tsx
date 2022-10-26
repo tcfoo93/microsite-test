@@ -15,6 +15,7 @@ export default function MicrositeTest(props: IAppProps) {
 }
 
 export async function bootstrap(props?: any) {
+	return props;
 }
 
 export async function mount(props?: any) {
@@ -26,6 +27,10 @@ export async function mount(props?: any) {
 	root.render(<MicrositeTest {...props} />)
 }
 
-export async function unmount(props?: any) {}
+export async function unmount(props?: any) {
+	return props;
+}
 
-export async function update(props: any) {}
+export async function update(props: any) { 
+	return props; 
+}

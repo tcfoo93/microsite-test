@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-
 const _ = require('lodash')
 const process = require('child_process')
 
@@ -11,7 +10,6 @@ helper.args = function args(args) {
 	_.forEach(args, function (arg) {
 		arg = _.split(arg, '=')
 
-		// arguments without value
 		if (arg.length == 1) {
 			results[arg[0]] = true
 			return results
