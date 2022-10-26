@@ -16,7 +16,7 @@ return (
                 exit={{opacity:0}}
                 transition={{duration: 2}}
             >
-            <div className="background-container">
+            <div className="background-video">
                 <div className="page-overlay"></div>
                 <video autoPlay muted loop>
                     <source src={state.backgroudVideo} dns-prefetch="true" type="video/mp4" />
