@@ -1,8 +1,8 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable import/no-extraneous-dependencies */
-const _ = require('lodash')
-const helper = require('./helper')
+const _ = require('lodash');
+const helper = require('./helper');
 
 const args = helper.args(process.argv)
 
