@@ -1,4 +1,7 @@
 node {
+  agent {
+    label "jenkins-agent"
+  }
   try {
     stage('Checkout') {
       checkout scm
