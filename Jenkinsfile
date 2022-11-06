@@ -22,7 +22,7 @@ node {
         sh 'sonar-scanner -D project.settings=./sonar.properties'
     }
     stage('Deploy'){
-      if(env.BRANCH_NAME == 'master'){
+      if(env.BRANCH_NAME == 'develop'){
         sh 'docker build -t microsite-test --no-cache .'
         sh 'docker tag microsite-test localhost:9090/microsite-test'
         sh 'docker push localhost:9090/microsite-test'
