@@ -34,7 +34,7 @@ if (!_.isUndefined(process.env.publicPath)) {
 }
 
 const port = process.env.port ? process.env.port : portFinderSync.getPort(9005)
-const publicPath = '/'
+const publicPath = '/slide'
 const fullPath = `http://localhost:${port}${publicPath}`
 const appVersion = packageJson.version
 const buildDatetime = new Date()

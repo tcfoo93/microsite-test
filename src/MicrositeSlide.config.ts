@@ -1,5 +1,5 @@
-import { IAppProps } from './MicrositeTest.interface'
-import { AppConstants } from './MicrositeTest.constants'
+import { IAppProps } from './MicrositeSlide.interface'
+import { AppConstants } from './MicrositeSlide.constants'
 
 const config: IAppProps = {
 	name: AppConstants.appName,

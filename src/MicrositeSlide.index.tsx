@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './MicrositeTest.app'
-import { AppConstants } from './MicrositeTest.constants'
-import { IAppProps, IAppState } from './MicrositeTest.interface'
+import App from './MicrositeSlide.app'
+import { AppConstants } from './MicrositeSlide.constants'
+import { IAppProps, IAppState } from './MicrositeSlide.interface'
 import '@assets/styles/main.scss'
 
-export default function MicrositeTest(props: IAppProps) {
+export default function MicrositeSlide(props: IAppProps) {
 	const activeRule = '/'
 	const [state] = useState<IAppState>({
 		activeRule
@@ -15,7 +15,10 @@ export default function MicrositeTest(props: IAppProps) {
 }
 
 export async function bootstrap(props?: any) {
-	return props;
+	if ((window as any).__POWERED_BY_QIANKUN__) {
+		// eslint-disable-next-line camelcase
+		console.log('__POWERED_BY_QIANKUN__')
+	}
 }
 
 export async function mount(props?: any) {
@@ -24,7 +27,7 @@ export async function mount(props?: any) {
 	const rootNode = ctn ? ctn.querySelector(`#${id}`) : document.getElementById(id)
 	const root = createRoot(rootNode)
 
-	root.render(<MicrositeTest {...props} />)
+	root.render(<MicrositeSlide {...props} />)
 }
 
 export async function unmount(props?: any) {

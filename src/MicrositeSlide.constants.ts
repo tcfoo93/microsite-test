@@ -1,6 +1,6 @@
 export const AppConstants = {
 	get appName() {
-		return 'microsite-test'
+		return 'microsite-slide'
 	}
 }
 

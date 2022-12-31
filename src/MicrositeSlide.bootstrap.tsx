@@ -25,7 +25,7 @@ const config: IConfig = {
 }
 
 export async function bootstrap(props?: any) {
-	config.application = await import('./MicrositeTest.index')
+	config.application = await import('./MicrositeSlide.index')
 	await config.application.bootstrap(props)
 }
 
@@ -41,11 +41,13 @@ export async function update(props: any) {
 	await config.application.update(props)
 }
 
-Promise.resolve()
-	.then(() => {
-		return bootstrap()
-	})
-	.then(() => {
-		return mount()
-	})
-
+if (!(window as any).__POWERED_BY_QIANKUN__) {
+	Promise.resolve()
+		.then(() => {
+			return bootstrap()
+		})
+		.then(() => {
+			return mount()
+		})
+}
+	

@@ -27,15 +27,7 @@ module.exports = {
 			'@services': path.resolve(__dirname, './src/services'),
 			'@modules': path.resolve(__dirname, './src/modules'),
 			'@assets': path.resolve(__dirname, './src/assets')
-		},
-		fallback: {
-			constants: false,
-			crypto: false,
-			stream: false,
-			path: false,
-			assert: false,
-			buffer: false
-		},
+		}
 	},
 	module: {
 		rules: [

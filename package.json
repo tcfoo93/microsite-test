@@ -1,5 +1,5 @@
 {
-    "name": "microsite-test",
+    "name": "microsite-slide",
     "version": "1.0.0",
     "scripts": {
         "start": "node scripts/prepare.js serve=true port=9090",

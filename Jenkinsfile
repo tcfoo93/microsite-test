@@ -26,10 +26,10 @@ node {
     }
     stage('Deploy'){
       if(env.BRANCH_NAME == 'develop'){
-        sh 'docker build -t microsite-test --no-cache .'
-        sh 'docker tag microsite-test localhost:9090/microsite-test'
-        sh 'docker push localhost:9090/microsite-test'
-        sh 'docker rmi -f microsite-test localhost:9090/microsite-test'
+        sh 'docker build -t microsite-slide --no-cache .'
+        sh 'docker tag microsite-slide localhost:9090/microsite-slide'
+        sh 'docker push localhost:9090/microsite-slide'
+        sh 'docker rmi -f microsite-slide localhost:9090/microsite-slide'
       }
     }
   }

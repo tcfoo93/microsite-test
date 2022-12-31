@@ -2,7 +2,7 @@
     "subApps": [
         {
             "props": {
-                "publicPath": "/test"
+                "publicPath": "/slide"
             }
         }
     ]

@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { AppConstantRoutes } from '@src/MicrositeTest.constants';
-import { IModuleProps } from '@src/MicrositeTest.interface';
+import { AppConstantRoutes } from '@src/MicrositeSlide.constants';
+import { IModuleProps } from '@src/MicrositeSlide.interface';
 const Slide = lazy(() => import(`./pages/Slide`))
 
 function SlideShowModule(props:IModuleProps) {
